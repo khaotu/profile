@@ -24,6 +24,10 @@ export default {
   */
   css: [
   ],
+  server: {
+    port: 3000, // default: 3000
+    host: '0.0.0.0' // default: localhost
+  },
   /*
   ** Plugins to load before mounting the App
   */
@@ -54,5 +58,9 @@ export default {
     */
     extend(config, ctx) {
     }
-  }
+  },
+  buildModules: [
+    // Simple usage
+    '@nuxtjs/dotenv',
+  ]
 }
