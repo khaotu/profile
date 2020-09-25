@@ -81,7 +81,7 @@ export default {
   mounted() {
     anime({
       targets: '.profile',
-      translateX: '18vw',
+      translateX: '12vw',
       duration: 5000
     });
     anime({
@@ -92,7 +92,8 @@ export default {
     });
     var image = document.getElementsByClassName('girls');
     new simpleParallax(image,{
-      scale: 1.2
+      scale: 1.2,
+      overflow: true
     });
   },
   methods: {
