@@ -1,28 +1,19 @@
 <template>
-   <b-row 
-      align-h="center" align-v="center" style="min-height:90vh">
-        <b-col align-v="center" md="12" lg="6"> 
-          <div class="profile">
-            <b-img 
-            class="girls"
-            width= "400"
-            height= "400"
-            src="@/static/profile.PNG" 
-            fluid alt="Responsive image"></b-img>
-          </div>
-        </b-col>
-        <b-col align-h="center" align-v="center" class="box pa-3" md="12" lg="6">
+   <b-row
+      align-v="center" style="min-height:100vh">
+        <b-col
+         class="box" style="padding: 40px" md="12" lg="6" offset-lg="6">
           <div >
-            <h1 class="pa-3">{{ name }}</h1>
-            <h3>Here's who I am & what I do</h3>
-            <p style="max-width:30em">
-            I'm a developer at Greenline Synergy company. <br>
-            One-year experience with Python HTML CSS and Javascript.
-            I’m curious, and I enjoy work that challenges me to learn something new. 
+            <h1 class="pa-3 font" >{{ name }}</h1>
+            <!-- <h3>Here's who I am & what I do</h3> -->
+            <p style="max-width:30em; color:white;">
+            I'm a developer. <br>
+            Familiar with Python HTML CSS and Javascript.
+            I’m curious, and I enjoy work that challenges me to learn something new.
             </p>
             <b-button
             class="px-5"
-            variant="outline-primary"
+            variant="primary"
             pill
             @click.prevent="downloadItem()">
               Resume
@@ -75,7 +66,7 @@ export default {
           "contact": "https://github.com/khaotu",
           "logo": "https://cdn.iconscout.com/icon/free/png-256/github-153-675523.png"
         },
-      ] 
+      ]
     }
   },
   mounted() {
@@ -98,10 +89,16 @@ export default {
   },
   methods: {
     downloadItem () {
-      window.open('https://drive.google.com/file/d/1O1ljiXPzqkKJe5Xd_okFsRvUqU6Y11C4/view?usp=sharing', '_blank');
-      
+      window.open('https://drive.google.com/file/d/1KX07ZW93gQVuavsEBPMtqdr72gjf3mY4/view?usp=sharing', '_blank');
+
     }
   }
-  
+
 }
 </script>
+<style scoped>
+  .font {
+    color: white;
+  }
+
+</style>

@@ -23,6 +23,7 @@ export default {
   ** Global CSS
   */
   css: [
+    '~/assets/css/main.css'
   ],
   server: {
     port: 3000, // default: 3000
@@ -32,6 +33,9 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
+    '~/plugins/vuescroll.js',
+    '~/plugins/icon.js',
+    '~/plugins/simple-timeline.js'
   ],
   /*
   ** Nuxt.js modules
